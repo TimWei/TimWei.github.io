@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="zh-tw" class="lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="zh-tw" class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="zh-tw" style="height:100%;"><!--<![endif]-->
+  <head>
+    <title>ㄘ飯</title>
+    <!--layout stylesheet-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scaffold.css">
+    <!--page stylesheet-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+  <!--layout/main-->
+  <body class= 'body'>
+  
+    <!--partial/bubble_chart-->
+    <div class='bubble'><p class='bubble_text_4word'>識貨ㄛ!!</p></div>
+    <!--partial/header-->
+    <div class='header_container' >
+      <a href='/'>[首頁]</a>
+      <a href='/main'>[主線召喚]</a>
+      <a href='/event'>[時限活動]</a>
+      <a target='_blank' href='https://twitter.com/granbluefantasy'>[官方twitter]</a>
+      <a href='/about_me' style = 'color:white; float:right;'>[[關於作者]]</a>
+    </div>
+
+    <!--page/main-->
+    <div class= 'main_container'>
+      <h1 class="main_header">主線召喚</h1>
+      <div class='list'>
+        <% @ids.each_with_index do |junre,j_index|%>
+          <% next if junre[1].size < 1%>
+          <div class='list_item'>
+            <div style="padding-top:50px;">
+              <%= image_tag asset_path(MAIN_BOSS_IMAGE[junre[0]]) , style:'width:100px;'%>
+              <span style="font-size: 25px;"><%= junre[0] %></span>
+            </div>
+            <table>
+                <tbody>
+                <% junre[1].each_with_index do |t,t_index|%>
+                  <% row_id =  j_index.to_s + '_' + t_index.to_s %>
+                  <tr>
+                    <td id="<%= row_id  %>" style="padding-top: 15px;">
+                      <textarea class="js-copytextarea-<%= j_index %>-<%= row_id %>"  onclick='copyToClipboard(<%= j_index %>, "<%= row_id%>" )'><%= t.split("：")[1] %></textarea>
+                     <a href='javascript: void;' style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById('<%= row_id %>').style.display='none';return false;">刪除</a>
+                    </td>
+                </tr>
+                <% end %>
+                </tbody>
+            </table>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
