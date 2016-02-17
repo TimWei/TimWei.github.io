@@ -12,8 +12,12 @@
   </body>
 </html>
 <script>
-$( document ).ready(function() {
-
-      console.log('ready');
+  $( document ).ready(function() {
+    $.ajax({
+      type: "GET",
+      url: 'http://google.com',
+      success: function success(e){console.log(e);},
+      dataType: 'html'
     });
+  });
 </script>
