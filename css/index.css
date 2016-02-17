@@ -19,7 +19,12 @@
     opacity : 0.5;
     z-index: -1;
   }
-
+  
+  .header_container {
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 18px;
+  }
  .bubble{
     position: fixed;
     display: inline;
