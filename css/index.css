@@ -19,3 +19,30 @@
     opacity : 0.5;
     z-index: -1;
   }
+
+ .bubble{
+    position: fixed;
+    display: inline;
+    right: 5px;
+    bottom: 300px;
+    height: 30%;
+    width: 50%;
+    background-image: url( <%= asset_url 'bubble' %>);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 50% 50%;
+    opacity : 0.5;
+    z-index: 2;
+ }
+
+ .bubble_text_4word{
+    font-family: Microsoft JhengHei;
+    font-size: 3vw;
+    height: 15%;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 15%;
+    left: 14%;
+    transform: rotate3d(1,0,-1,17deg);
+ }
+ 
