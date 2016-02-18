@@ -1,4 +1,4 @@
-$('.main_container').ready(function{
+$('.main_container').ready(function(){
   var data;
   get_data(data);
   console.log(data);
@@ -18,4 +18,4 @@ $('.main_container').ready(function{
     });
   }
 
-})
+});
