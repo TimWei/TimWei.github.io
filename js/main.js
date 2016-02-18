@@ -107,8 +107,6 @@ $('.main_container').ready(function(){
     table_data += '</tbody></table>';
     $(table_data).insertAfter(img_div_id);
   }
-
-
   
   function resize_document(){
     var wheight = $(document).height();
@@ -118,12 +116,13 @@ $('.main_container').ready(function(){
     console.log($('html').height());
     console.log($('body').height());
   }
-
+  
   function show_bubble(){
     var bubble_div = $('.bubble');
     bubble_div.children('p').text('讀取丸成!')
     bubble_div.removeClass('hide');
   }
+
   function show_bubble_error(){
     var bubble_div = $('.bubble');
     bubble_div.children('p').text('連線失敗!')
