@@ -17,4 +17,8 @@
     font-size: 25px;
     color: red;
     font-weight: bold;
+  }  
+  .hidden_text{
+    font-size: 15px;
+    color: white;
   }
