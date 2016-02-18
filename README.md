@@ -10,22 +10,18 @@
 </br>
 </p>
 
-
-
-</br>
 ---
-</br>
 
 <h3>這網站好陽春ㄛ?</h3>
 <p>該專案原本是Rails練習一些gems的專案</br>
 最近把一些功能從原專案中拔出來轉成靜態網頁</br>
 順便練習一些html的基礎</br>
-原本的Rails Html Template改用JS來做布局</br></p>
+原本的Rails Html Template改用JS來做布局</br>
+<del>而且作者很懶</del>
+</p>
 
-
-</br>
 ---
-</br>
+
 <h3>你可以怎樣幫助這份專案?</h3>
 <p>
 。Fork這份專案，並且加上你覺得很酷的功能后發Pull Request</br>
@@ -34,10 +30,7 @@
 <del>。捐錢給作者租機器</del> 
 </p>
 
-
-</br>
 ---
-</br>
 
 <h3>聲明:<h3>
 <p>網站的圖片都是Pixiv網抓的</br>
