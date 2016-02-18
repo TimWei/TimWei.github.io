@@ -1,3 +1,11 @@
+    function copyToClipboard(jindex,tindex) {
+      var tar = '.js-copytextarea' + '-' + jindex + '-' + tindex;
+      var copyTextarea = document.querySelector(tar);
+      copyTextarea.select();
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+    }
+    
 //constants
 var BOSS = [
   'ティアマト・マグナ',
@@ -85,7 +93,7 @@ $('.main_container').ready(function(){
       var row_data = '<tr>'+
                         '<td id="' +boss_index+'_'+i+'" style="padding-top: 15px;">'+
                            '<textarea class="js-copytextarea-'+ boss_index+'-'+ boss_index+'_'+i+'" onclick="copyToClipboard('+i+','+boss_index+')">'+ id_array[i].split("：")[1]+'</textarea>'+
-                            '<a href="javascript: void;" style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById(\''+boss_index+ '\').style.display=\'none\';return false;">刪除</a>'+
+                            '<a href="javascript: void;" style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById(\''+boss_index+'_'+i+ '\').style.display=\'none\';return false;">刪除</a>'+
                         '</td>'+
                       '</tr>';
 
