@@ -44,6 +44,7 @@ $('.main_container').ready(function(){
       timeout: 5000,
       success: function(json) {
         set_list(json);
+        window.setTimeout(resize_document, 3000);
       },
       error: function(){
         set_error();
@@ -57,8 +58,6 @@ $('.main_container').ready(function(){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
-        resize_html();
-        resize_body();
       }else{
         continue;
       }
@@ -107,19 +106,15 @@ $('.main_container').ready(function(){
     $(table_data).insertAfter(img_div_id);
   }
 
-  function resize_html(){
-    var wheight = $(document).height();
-    console.log(wheight);
-    console.log($('html').height());
-    $('html').height(wheight);
-  }
 
   
-  function resize_body(){
+  function resize_document(){
     var wheight = $(document).height();
-    console.log(wheight);
-    console.log($('body').height());
+    $('html').height(wheight);
     $('body').height(wheight);
+    console.log(wheight);
+    console.log($('html').height());
+    console.log($('body').height());
   }
 
 
