@@ -70,8 +70,8 @@ $('.main_container').ready(function(){
     var table_data = '<table><tbody>' + 
 
                        '</tbody></table>';
-                       
-    for(int i = 0 ; i< data[key].length;i++){$(table_data).insertAfter(img_div_id);}
+
+    for(var i = 0 ; i< data[key].length;i++){$(table_data).insertAfter(img_div_id);}
 
     //$(table_data).insertAfter(img_div_id);
   }
