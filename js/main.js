@@ -1,3 +1,14 @@
+//constants
+var BOSS_IMG_HASH = {
+  'ティアマト・マグナ': 'img/wind.png',
+  'コロッサス・マグナ': 'img/fire.png',
+  'リヴァイアサン・マグナ': 'img/water.png',
+  'ユグドラシル・マグナ': 'img/earth.png',
+  'シュヴァリエ・マグナ': 'img/light.png',
+  'セレスト・マグナ': 'img/dark.png'
+}
+
+
 $('.main_container').ready(function(){
   get_data();
 
@@ -29,7 +40,7 @@ $('.main_container').ready(function(){
   function append_list_item(parent,key){
     var list_item = '<div class="list_item">'+
                       '<div style="padding-top:50px;">'+
-                        '<img style="width:100px;" src="img/" '+ key + '.png">'+
+                        '<img style="width:100px;" src="'+ BOSS_IMG_HASH[key] + '">'+
                         '<span style="font-size: 25px;">' + key + '</span>'
                       '</div>'+
                     '</div>';
