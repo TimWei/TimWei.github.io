@@ -39,7 +39,7 @@ $('.main_container').ready(function(){
   } 
   function set_error(){
     var list = $('.list');
-    var error = '<p> <span style="'+  ' color: "red"; '  +'">伺服器沒有回應</span> </p>';
+    var error = '<p class="error"> <span>伺服器沒有回應</span> </p>';
     list.append(error);
   } 
 
