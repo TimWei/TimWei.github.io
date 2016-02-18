@@ -21,7 +21,7 @@ $('.main_container').ready(function(){
         set_list(json);
       },
       error: function(){
-        return 'timeout';
+        set_error();
       }
     });
   }
@@ -36,6 +36,11 @@ $('.main_container').ready(function(){
         continue;
       }
     }
+  } 
+  function set_error(){
+    var list = $('.list');
+    var error = '<p> <span style="'+  ' color: "red"; '  +'">伺服器沒有回應</span> </p>';
+    list.append(error);
   } 
 
   function append_list_item(parent,key){

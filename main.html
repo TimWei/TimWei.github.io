@@ -31,28 +31,7 @@
     <div class= 'main_container'>
       <h1 class="main_header">主線召喚</h1>
       <div class='list'>
-        <% @ids.each_with_index do |junre,j_index|%>
-          <% next if junre[1].size < 1%>
-          <div class='list_item'>
-            <div style="padding-top:50px;">
-              <%= image_tag asset_path(MAIN_BOSS_IMAGE[junre[0]]) , style:'width:100px;'%>
-              <span style="font-size: 25px;"><%= junre[0] %></span>
-            </div>
-            <table>
-                <tbody>
-                <% junre[1].each_with_index do |t,t_index|%>
-                  <% row_id =  j_index.to_s + '_' + t_index.to_s %>
-                  <tr>
-                    <td id="<%= row_id  %>" style="padding-top: 15px;">
-                      <textarea class="js-copytextarea-<%= j_index %>-<%= row_id %>"  onclick='copyToClipboard(<%= j_index %>, "<%= row_id%>" )'><%= t.split("：")[1] %></textarea>
-                     <a href='javascript: void;' style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById('<%= row_id %>').style.display='none';return false;">刪除</a>
-                    </td>
-                </tr>
-                <% end %>
-                </tbody>
-            </table>
-          </div>
-        <% end %>
+
       </div>
     </div>
   </body>
