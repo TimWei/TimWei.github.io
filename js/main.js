@@ -67,7 +67,13 @@ $('.main_container').ready(function(){
 
   function append_table(parent,key){
     var img_div_id = '#' + BOSS_NAME_HASH[key];
-    $('<p>hello</p>').insertAfter(img_div_id);
+    var table_data = '<table><tbody>' + 
+
+                       '</tbody></table>';
+                       
+    for(int i = 0 ; i< data[key].length;i++){$(table_data).insertAfter(img_div_id);}
+
+    //$(table_data).insertAfter(img_div_id);
   }
 
 });
