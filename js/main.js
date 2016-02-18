@@ -44,10 +44,12 @@ $('.main_container').ready(function(){
       timeout: 5000,
       success: function(json) {
         set_list(json);
+        show_buuble();
         window.setTimeout(resize_document, 1500);
       },
       error: function(){
         set_error();
+        show_bubble_error();
       }
     });
   }
@@ -117,5 +119,15 @@ $('.main_container').ready(function(){
     console.log($('body').height());
   }
 
+  function show_bubble(){
+    var bubble_div = $('.bubble');
+    bubble_div.children('p').text('讀取丸成!')
+    bubble_div.removeClass('hide');
+  }
+  function show_bubble_error(){
+    var bubble_div = $('.bubble');
+    bubble_div.children('p').text('連線失敗!')
+    bubble_div.removeClass('hide');
+  }
 
 });

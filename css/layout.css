@@ -41,6 +41,10 @@
     z-index: 2;
   }
 
+  .hide {
+    display: none;
+  }
+
   .bubble_text_4word{
     font-family: Microsoft JhengHei;
     font-size: 3vw;
