@@ -7,6 +7,14 @@ var BOSS_IMG_HASH = {
   'シュヴァリエ・マグナ': 'img/main/light.png',
   'セレスト・マグナ': 'img/main/dark.png'
 }
+var BOSS_NAME_HASH = {
+  'ティアマト・マグナ': 'wind',
+  'コロッサス・マグナ': 'fire',
+  'リヴァイアサン・マグナ': 'water',
+  'ユグドラシル・マグナ': 'earth',
+  'シュヴァリエ・マグナ': 'light',
+  'セレスト・マグナ': 'dark'
+}
 
 
 $('.main_container').ready(function(){
@@ -49,13 +57,14 @@ $('.main_container').ready(function(){
 
   function append_list_item(parent,key){
     var list_item = '<div class="list_item">'+
-                      '<div style="padding-top:50px;" id="boss_name">'+
+                      '<div style="padding-top:50px;" id="'+BOSS_NAME_HASH[key]+'">'+
                         '<img style="width:100px;" src="'+ BOSS_IMG_HASH[key] + '">'+
                         '<span style="font-size: 25px;">' + key + '</span>'
                       '</div>'+
                     '</div>';
     parent.append(list_item);
   }
+  
   function append_table(parent,key){
     $('<p>hello</p>').insertAfter('#boss_name')
   }
