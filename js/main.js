@@ -61,8 +61,10 @@ $('.main_container').ready(function(){
         continue;
       }
     }
-    resize_window();
+    resize_html();
+    resize_body();
   } 
+  
   function set_error(){
     var list = $('.list');
     var error = '<p class="error">' + ' <span>伺服器沒有回應，請稍後片刻</span></br></br></br></br></br>'+
@@ -105,9 +107,16 @@ $('.main_container').ready(function(){
     $(table_data).insertAfter(img_div_id);
   }
 
-  function resize_window(){
+  function resize_html(){
     var wheight = $(document).height();
     $('html').height(wheight);
+  }
+
+  
+  function resize_body(){
+    var wheight = $(document).height();
     $('body').height(wheight);
   }
+
+
 });
