@@ -119,7 +119,7 @@ $('.main_container').ready(function(){
 
   function show_bubble(){
     var bubble_div = $('.bubble');
-    bubble_div.children('p').text('讀取丸成!')
+    bubble_div.children('p').text(random_text());
     bubble_div.removeClass('hide');
   }
 
@@ -129,4 +129,20 @@ $('.main_container').ready(function(){
     bubble_div.removeClass('hide');
   }
 
+  function random_text(){
+    var text_arr = [
+      '讀取成功!',
+      '丸!',
+      '粗奶丸!'
+      '連線成功',
+      '太好丸惹',
+      '舔!',
+      '識貨ㄛ',
+      '識貨ㄛ',
+      '識貨ㄛ',
+      '識貨ㄛ'
+    ];
+    var text = text_arr[Math.floor(Math.random()*text_arr.length)];
+    return text;
+  }  
 });
