@@ -4,6 +4,9 @@
       copyTextarea.select();
       var successful = document.execCommand('copy');
       var msg = successful ? 'successful' : 'unsuccessful';
+      var bubble_div = $('.bubble');
+      bubble_div.children('p').text( '複製成功!' );
+
     }
     
 //constants
@@ -121,6 +124,7 @@ $('.main_container').ready(function(){
     var bubble_div = $('.bubble');
     bubble_div.children('p').text( random_text() );
     bubble_div.removeClass('hide');
+
   }
 
   function show_bubble_error(){
