@@ -50,7 +50,7 @@ $('.main_container').ready(function(){
   function append_list_item(parent,key){
     var list_item = '<div class="list_item">'+
                       '<div style="padding-top:50px;">'+
-                        '<img style="width:100px;" src="'+ BOSS_IMG_HASH[key] + '">'+
+                        '<img style="width:100px;" src="main/'+ BOSS_IMG_HASH[key] + '">'+
                         '<span style="font-size: 25px;">' + key + '</span>'
                       '</div>'+
                     '</div>';
