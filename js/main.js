@@ -119,7 +119,8 @@ $('.main_container').ready(function(){
 
   function show_bubble(){
     var bubble_div = $('.bubble');
-    bubble_div.children('p').text(random_text());
+    var text = random_text()
+    bubble_div.children('p').text();
     bubble_div.removeClass('hide');
   }
 
@@ -133,7 +134,7 @@ $('.main_container').ready(function(){
     var text_arr = [
       '讀取成功!',
       '丸!',
-      '粗奶丸!'
+      '粗奶丸!',
       '連線成功',
       '太好丸惹',
       '舔!',
