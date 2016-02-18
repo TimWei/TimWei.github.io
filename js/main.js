@@ -64,9 +64,10 @@ $('.main_container').ready(function(){
                     '</div>';
     parent.append(list_item);
   }
-  
+
   function append_table(parent,key){
-    $('<p>hello</p>').insertAfter('#boss_name')
+    var img_div_id = '#' + BOSS_NAME_HASH[key];
+    $('<p>hello</p>').insertAfter(img_div_id);
   }
 
 });
