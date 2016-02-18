@@ -109,12 +109,16 @@ $('.main_container').ready(function(){
 
   function resize_html(){
     var wheight = $(document).height();
+    console.log(wheight);
+    console.log($('html').height());
     $('html').height(wheight);
   }
 
   
   function resize_body(){
     var wheight = $(document).height();
+    console.log(wheight);
+    console.log($('body').height());
     $('body').height(wheight);
   }
 
