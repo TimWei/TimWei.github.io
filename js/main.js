@@ -76,8 +76,10 @@ $('.main_container').ready(function(){
 
   function append_table(parent,key,id_array){
     var img_div_id = '#' + BOSS_NAME_HASH[key];
-    var table_data = '<table><tbody>';
     var boss_index = BOSS.indexOf(key);
+ //   var table_id = 'table_'+boss_index;
+ //   var table_data = '<table><tbody id="'+table_id+'">';
+   var table_data = '<table><tbody>';
 
     for(var i = 0 ; i< id_array.length;i++){
       var row_data = '<tr>'+
@@ -86,7 +88,8 @@ $('.main_container').ready(function(){
                             '<a href="javascript: void;" style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById("'+boss_index+ '").style.display="none";return false;">刪除</a>'+
                         '</td>'+
                       '</tr>';
-   
+
+      table_data += row_data;
     }
 
     table_data += '</tbody></table>';
