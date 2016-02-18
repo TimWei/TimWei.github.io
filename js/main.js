@@ -39,21 +39,11 @@ $('.main_container').ready(function(){
   } 
   function set_error(){
     var list = $('.list');
-    var error = '<p class="error"> 
-                   <span>伺服器沒有回應，請稍後片刻</span>
-                   </br>
-                   </br>
-                   </br>
-                   </br>
-                   </br>
-                   <span class="hidden_text">作者：windows又爆炸啦</span>
-                   </br>
-                   <span class="hidden_text">作者：請給我一點黃金</span>
-                   </br>
-                   <span class="hidden_text">作者：請給我一點黃金</span>
-                   </br>
-                   <span class="hidden_text">作者：請給我一點黃金</span>
-                 </p>';
+    var error = '<p class="error"><span>伺服器沒有回應，請稍後片刻</span></br></br></br></br></br>
+    <span class="hidden_text">作者：windows又爆炸啦</span></br>
+    <span class="hidden_text">作者：請給我一點黃金</span></br>
+    <span class="hidden_text">作者：請給我一點黃金</span></br>
+    <span class="hidden_text">作者：請給我一點黃金</span></p>';
     list.append(error);
   } 
 
