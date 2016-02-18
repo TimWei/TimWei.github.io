@@ -57,12 +57,12 @@ $('.main_container').ready(function(){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
+        resize_html();
+        resize_body();
       }else{
         continue;
       }
     }
-    resize_html();
-    resize_body();
   } 
   
   function set_error(){
