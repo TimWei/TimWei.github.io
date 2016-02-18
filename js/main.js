@@ -49,7 +49,7 @@ $('.main_container').ready(function(){
 
   function append_list_item(parent,key){
     var list_item = '<div class="list_item">'+
-                      '<div style="padding-top:50px;">'+
+                      '<div style="padding-top:50px;" id="boss_name">'+
                         '<img style="width:100px;" src="'+ BOSS_IMG_HASH[key] + '">'+
                         '<span style="font-size: 25px;">' + key + '</span>'
                       '</div>'+
@@ -57,7 +57,7 @@ $('.main_container').ready(function(){
     parent.append(list_item);
   }
   function append_table(parent,key){
-    //$('<p>hello</p>').insertAfter('#container:first')
+    $('<p>hello</p>').insertAfter('#boss_name')
   }
 
 });
