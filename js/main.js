@@ -37,19 +37,6 @@ var BOSS_NAME_HASH = {
 $('.main_container').ready(function(){
   get_data();
 
-  
-  function show_bubble(){
-    var bubble_div = $('.bubble');
-    bubble_div.children('p').text('讀取丸成!')
-    bubble_div.removeClass('hide');
-  }
-
-  function show_bubble_error(){
-    var bubble_div = $('.bubble');
-    bubble_div.children('p').text('連線失敗!')
-    bubble_div.removeClass('hide');
-  }
-
   function get_data(){
     $.ajax({
       type: "GET",
@@ -57,7 +44,7 @@ $('.main_container').ready(function(){
       timeout: 5000,
       success: function(json) {
         set_list(json);
-        show_buuble();
+        show_bubble();
         window.setTimeout(resize_document, 1500);
       },
       error: function(){
@@ -128,6 +115,18 @@ $('.main_container').ready(function(){
     console.log(wheight);
     console.log($('html').height());
     console.log($('body').height());
+  }
+  
+  function show_bubble(){
+    var bubble_div = $('.bubble');
+    bubble_div.children('p').text('讀取丸成!')
+    bubble_div.removeClass('hide');
+  }
+
+  function show_bubble_error(){
+    var bubble_div = $('.bubble');
+    bubble_div.children('p').text('連線失敗!')
+    bubble_div.removeClass('hide');
   }
 
 });
