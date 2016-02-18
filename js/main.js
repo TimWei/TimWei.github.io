@@ -61,6 +61,7 @@ $('.main_container').ready(function(){
         continue;
       }
     }
+    resize_window();
   } 
   function set_error(){
     var list = $('.list');
@@ -104,4 +105,9 @@ $('.main_container').ready(function(){
     $(table_data).insertAfter(img_div_id);
   }
 
+  function resize_window(){
+    var wheight = $(document).height();
+    $('html').height(wheight);
+    $('body').height(wheight);
+  }
 });
