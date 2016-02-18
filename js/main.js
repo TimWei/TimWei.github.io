@@ -44,7 +44,7 @@ $('.main_container').ready(function(){
       timeout: 5000,
       success: function(json) {
         set_list(json);
-        window.setTimeout(resize_document, 3000);
+        window.setTimeout(resize_document, 1500);
       },
       error: function(){
         set_error();
