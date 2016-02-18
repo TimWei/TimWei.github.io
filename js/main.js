@@ -1,4 +1,13 @@
 //constants
+var BOSS = [
+  'ティアマト・マグナ',
+  'コロッサス・マグナ',
+  'リヴァイアサン・マグナ',
+  'ユグドラシル・マグナ',
+  'シュヴァリエ・マグナ',
+  'セレスト・マグナ'
+  ]
+
 var BOSS_IMG_HASH = {
   'ティアマト・マグナ': 'img/main/wind.png',
   'コロッサス・マグナ': 'img/main/fire.png',
@@ -39,7 +48,7 @@ $('.main_container').ready(function(){
     for(var key in data){
       if(data[key].length > 0){
         append_list_item(list,key);
-        append_table(list,key);
+        append_table(list,key,data[key]);
       }else{
         continue;
       }
@@ -65,15 +74,23 @@ $('.main_container').ready(function(){
     parent.append(list_item);
   }
 
-  function append_table(parent,key){
+  function append_table(parent,key,id_array){
     var img_div_id = '#' + BOSS_NAME_HASH[key];
-    var table_data = '<table><tbody>' + 
+    var table_data = '<table><tbody>';
+    var boss_index = BOSS.indexOf(key);
 
-                       '</tbody></table>';
+    for(var i = 0 ; i< id_array.length;i++){
+      var row_data = '<tr>'+
+                        '<td id="' +boss_index+'" style="padding-top: 15px;">'+
+                           '<textarea class="js-copytextarea-'+ boss_index+'-'+'i"  onclick="copyToClipboard('+i+','+boss_index+')">'+ id_array[i].split("：")[1]'</textarea>'+
+                            '<a href="javascript: void;" style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById("'+boss_index '").style.display="none";return false;">刪除</a>'+
+                        '</td>'+
+                      '</tr>';
+   
+    }
 
-    for(var i = 0 ; i< data[key].length;i++){$(table_data).insertAfter(img_div_id);}
-
-    //$(table_data).insertAfter(img_div_id);
+    table_data += '</tbody></table>';
+    $(table_data).insertAfter(img_div_id);
   }
 
 });
