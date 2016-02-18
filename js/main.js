@@ -44,8 +44,10 @@ $('.main_container').ready(function(){
       timeout: 5000,
       success: function(json) {
         set_list(json);
-        show_bubble();
-        window.setTimeout(resize_document, 1500);
+        //show_bubble();
+
+        //now show_bubble in resize event
+        window.setTimeout(resize_document, 1500); 
       },
       error: function(){
         set_error();
@@ -112,11 +114,9 @@ $('.main_container').ready(function(){
     var wheight = $(document).height();
     $('html').height(wheight);
     $('body').height(wheight);
-    console.log(wheight);
-    console.log($('html').height());
-    console.log($('body').height());
+    show_bubble();
   }
-  
+
   function show_bubble(){
     var bubble_div = $('.bubble');
     bubble_div.children('p').text('讀取丸成!')
