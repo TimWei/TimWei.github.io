@@ -43,7 +43,7 @@ $('.main_container').ready(function(){
   function get_data(){
     $.ajax({
       type: "GET",
-      url: "http://111.184.30.75:4444/api/get_main",
+      url: "http://111.184.30.75:5566/api/get_main",
       timeout: 5000,
       success: function(json) {
         set_list(json);
