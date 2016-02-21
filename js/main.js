@@ -50,7 +50,7 @@ $('.main_container').ready(function(){
         //show_bubble();
 
         //now show_bubble in resize event
-        window.setTimeout(resize_document, 1500); 
+        window.setTimeout(resize_document, 800); 
       },
       error: function(){
         set_error();
