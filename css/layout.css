@@ -56,3 +56,9 @@
     left: 14%;
     transform: rotate3d(1,0,-1,17deg);
   }
+
+  .footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }

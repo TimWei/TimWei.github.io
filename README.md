@@ -34,26 +34,26 @@
 
 <h3>更新履歷</h3>
 2/17:</br>
-開始著手將rails code整理</br>
-因為有太多之前測試的模組、DB跟網站設定</br>
+-開始著手將rails code整理</br>
+-因為有太多之前測試的模組、DB跟網站設定</br>
 </br>
 
 2/18:</br>
-修改rails teamplate成靜態網站</br>
-調整一些版面讓畫面不這麼壅擠</br>
+-修改rails teamplate成靜態網站</br>
+-調整一些版面讓畫面不這麼壅擠</br>
 </br>
 
 2/19:</br>
-對粗奶玩們的對話氣球做了些修改</br>
-現在粗奶玩們有不同的台詞惹</br>
+-對粗奶玩們的對話氣球做了些修改，現在粗奶玩們有不同的台詞惹</br>
 </br>
 
 2/21:</br>
-將古戰四象先註解</br>
+-將古戰四象先註解</br>
 </br>
 
 2/22:</br>
-新增favicon及相關header</br>
+-新增favicon及相關header</br>
+-從counter10那邊取得了第三方的webpage counter(*)</br>
 </br>
 </p>
 
