@@ -3,6 +3,9 @@
     position: relative;
     height: 100%;
     font-family: Microsoft JhengHei;
+  } 
+   .body a {
+    text-decoration: none;
   }
 /*
   .body:after {
@@ -25,6 +28,10 @@
     margin-left: 50px;
     margin-top: 15px;
     font-size: 18px;
+  }
+
+  .header_container .selected {
+    border-bottom: 5px solid black;
   }
 
   .bubble {
