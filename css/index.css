@@ -1,4 +1,23 @@
+    .hide{
+        display: none;
+    }
+    .billboard{
+        height: 100px;
+        width: 30%;
+        border: black;
+        border-width: thin;
+        border-style: solid;
+        word-wrap: break-word;
+        margin: auto;
+        min-width: 250px;
+        max-width: 450px;
+    }
 
+    .billboard p {
+        font-weight: bolder;
+        color: red;
+        font-size: 2em;
+    }
     .index_text{
       line-height:2;
       font-size: 15px;
