@@ -5,7 +5,7 @@
         height: 100px;
         width: 30%;
         border: black;
-        border-width: thin;
+        border-width: medium;
         border-style: solid;
         word-wrap: break-word;
         margin: auto;
@@ -16,7 +16,7 @@
     .billboard p {
         font-weight: bolder;
         color: red;
-        font-size: 2em;
+        font-size: 20px;
         text-align: center;
     }
     .index_text{
