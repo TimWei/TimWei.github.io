@@ -11,6 +11,7 @@
     width: 40%;
   }
   .list_item{
+    width: 330px;
     margin-left: 30px;
     display: inline-block;
   }
