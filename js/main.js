@@ -40,19 +40,20 @@ var BOSS_NAME_HASH = {
 $('.main_container').ready(function(){
   
   var refresh_count = 0;
-  init();
+  get_data();
+  // init();
 
 
-  function init(){
-    $('.list').eq(0).empty();
-    if(refresh_count < 60){
-      get_data();
-      window.setTimeout(init, 10000); 
-      refresh_count++;
-    }else{
-      say('該F5了ㄛ');
-    }
-  }
+  // function init(){
+  //   $('.list').eq(0).empty();
+  //   if(refresh_count < 60){
+  //     get_data();
+  //     window.setTimeout(init, 10000); 
+  //     refresh_count++;
+  //   }else{
+  //     say('該F5了ㄛ');
+  //   }
+  // }
 
   function get_data(){
     $.ajax({
