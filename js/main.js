@@ -45,9 +45,9 @@ $('.main_container').ready(function(){
 
   function init(){
     $('.list').eq(0).empty();
-    if(refresh_count < 250){
+    if(refresh_count < 60){
       get_data();
-      window.setTimeout(init, 6000); 
+      window.setTimeout(init, 10000); 
       refresh_count++;
     }else{
       say('該F5了ㄛ');
