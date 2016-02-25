@@ -38,19 +38,22 @@ var BOSS_NAME_HASH = {
 
 
 $('.main_container').ready(function(){
-  init();
+  
   var refresh_count = 0;
+  init();
+
 
   function init(){
-
     $('.list').eq(0).empty();
     if(refresh_count < 250){
       get_data();
-      window.setTimeout(init, 2500); 
+      window.setTimeout(init, 6000); 
+      refresh_count++;
     }else{
       say('該F5了ㄛ');
     }
   }
+
   function get_data(){
     $.ajax({
       type: "GET",
