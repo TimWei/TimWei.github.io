@@ -38,8 +38,19 @@ var BOSS_NAME_HASH = {
 
 
 $('.main_container').ready(function(){
-  get_data();
+  
+  var refresh_count = 0;
 
+  function init(){
+
+    $('.list').eq(0).empty();
+    if(refresh_count < 250){
+      get_data();
+      window.setTimeout(init, 2500); 
+    }else{
+      say('該F5了ㄛ');
+    }
+  }
   function get_data(){
     $.ajax({
       type: "GET",
@@ -149,4 +160,7 @@ $('.main_container').ready(function(){
     var text = text_arr[Math.floor(Math.random()*text_arr.length)];
     return text;
   }  
+  function say(e){
+    $('.bubble').children('p').text( random_text() );
+  }
 });
