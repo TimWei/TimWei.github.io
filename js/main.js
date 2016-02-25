@@ -38,7 +38,7 @@ var BOSS_NAME_HASH = {
 
 
 $('.main_container').ready(function(){
-  
+  init();
   var refresh_count = 0;
 
   function init(){
