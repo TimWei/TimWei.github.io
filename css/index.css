@@ -2,7 +2,7 @@
         display: none;
     }
     .billboard{
-        height: 100px;
+        height: auto;
         width: 30%;
         border: black;
         border-width: medium;
