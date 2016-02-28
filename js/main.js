@@ -9,7 +9,8 @@
 
     }
     
-var HOST_IP = 'http://58.114.75.173:5566'
+var HOST_IP = 'http://58.114.75.173:5566';
+var SERVICE_URL =  HOST_IP + "/api/get_event";
 
 //constants
 var BOSS = [
@@ -60,7 +61,7 @@ $('.main_container').ready(function(){
   function get_data(){
     $.ajax({
       type: "GET",
-      url: HOST_IP + "/api/get_event",
+      url: SERVICE_URL,
       timeout: 5000,
       success: function(json) {
         set_list(json);
