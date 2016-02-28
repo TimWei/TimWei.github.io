@@ -8,6 +8,8 @@
       bubble_div.children('p').text( '複製成功!' );
 
     }
+
+  var HOST_IP = 'http://58.114.75.173:5566'
     
 //constants
 var BOSS = [
@@ -28,7 +30,7 @@ $('.main_container').ready(function(){
   function get_data(){
     $.ajax({
       type: "GET",
-      url: "http://111.184.30.75:5566/api/get_event",
+      url: HOST_IP + "/api/get_event",
       timeout: 5000,
       success: function(json) {
         set_list(json);
