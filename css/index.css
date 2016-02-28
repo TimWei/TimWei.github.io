@@ -19,12 +19,12 @@
         text-align: center;
     }
 
-    .billboard p .alert {
+    .billboard .alert {
         color: red;
     }
 
 
-    .billboard p .notify {
+    .billboard .notify {
         color: green;
     }
 
