@@ -10,7 +10,7 @@
     }
     
 var HOST_IP = 'http://115.43.38.218:5566';
-var SERVICE_URL =  HOST_IP + "/api/get_main";
+var SERVICE_URL =  HOST_IP + "/api/get_hl_main";
 
 //constants
 var BOSS = [
