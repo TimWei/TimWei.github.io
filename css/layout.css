@@ -29,6 +29,9 @@
     margin-top: 15px;
     font-size: 18px;
   }
+  .header_container a {
+    display: inline-block;
+  }
 
   .header_container .selected {
     border-bottom: 5px solid black;
