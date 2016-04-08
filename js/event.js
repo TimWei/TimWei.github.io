@@ -14,14 +14,17 @@
     
 //constants
 var BOSS = [
-  'ティターン'
+  // 'ティターン'
+  'アグニス'
   ]
 
 var BOSS_IMG_HASH = {
-  'ティターン': 'img/event/four_earth.png'
+  // 'ティターン': 'img/event/four_earth.png'
+  'アグニス': 'img/event/four_fire.png'
 }
 var BOSS_NAME_HASH = {
-  'ティターン': 'four_earth'
+  // 'ティターン': 'four_earth'
+  'アグニス': 'four_fire'
 }
 
 
