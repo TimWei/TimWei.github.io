@@ -99,13 +99,18 @@ $('.main_container').ready(function(){
 
   function set_list(data){
     var list = $('.list');
+    empty = true;
     for(var key in data){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
+        empty = false;
       }else{
         continue;
       }
+    }
+    if(empty){
+      say('沒人開HL唷!');
     }
   } 
   
@@ -188,6 +193,6 @@ $('.main_container').ready(function(){
     return text;
   }  
   function say(e){
-    $('.bubble').children('p').text( random_text() );
+    $('.bubble').children('p').text(e);
   }
 });
