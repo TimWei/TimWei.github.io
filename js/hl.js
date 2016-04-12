@@ -104,7 +104,7 @@ $('.main_container').ready(function(){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
-        empty_flag = true;
+        empty_flag = false;
       }else{
         continue;
       }
