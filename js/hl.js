@@ -163,7 +163,7 @@ $('.main_container').ready(function(){
   function show_bubble(){
     var bubble_div = $('.bubble');
     if(empty_flag){
-      bubble_div.children('p').text( '目前沒人放HL唷!' );
+      bubble_div.children('p').text( '目前沒HL唷!' );
     }else{
       bubble_div.children('p').text( random_text() );
     }
