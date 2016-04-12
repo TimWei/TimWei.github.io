@@ -72,3 +72,8 @@
     bottom: 0px;
     right: 0px;
   }
+
+  .new_icon {
+    color: red;
+    font-size: 5px;
+  }  
