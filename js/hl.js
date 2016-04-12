@@ -62,6 +62,7 @@ var BOSS_NAME_HASH = {
 $('.main_container').ready(function(){
   
   var refresh_count = 0;
+  var empty_flag = true;
   get_data();
   // init();
 
@@ -99,20 +100,15 @@ $('.main_container').ready(function(){
 
   function set_list(data){
     var list = $('.list');
-    empty = true;
     for(var key in data){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
-        empty = false;
       }else{
         continue;
       }
     }
-    if(empty){
-      say('沒人開HL唷!');
-    }
-  } 
+  }
   
   function set_error(){
     var list = $('.list');
@@ -165,7 +161,11 @@ $('.main_container').ready(function(){
 
   function show_bubble(){
     var bubble_div = $('.bubble');
-    bubble_div.children('p').text( random_text() );
+    if(empty_flag){
+      bubble_div.children('p').text( '目前沒人放HL唷!' );
+    }else{
+      bubble_div.children('p').text( random_text() );
+    }
     bubble_div.removeClass('hide');
 
   }
