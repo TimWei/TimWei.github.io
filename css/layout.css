@@ -31,6 +31,7 @@
   }
   .header_container a {
     display: inline-block;
+    margin: 10px;
   }
 
   .header_container .selected {
