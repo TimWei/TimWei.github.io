@@ -9,7 +9,7 @@
 
     }
     
-var HOST_IP = 'http://115.43.38.218:5566';
+var HOST_IP = 'http://gacha-blur-fantasy.herokuapp.com';
 var SERVICE_URL =  HOST_IP + "/api/get_main";
 
 //constants
