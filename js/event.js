@@ -9,7 +9,7 @@
 
     }
 
-  var HOST_IP = 'http://gacha-blur-fantasy.herokuapp.com';
+  var HOST_IP = 'http://gacha-blue-fantasy.herokuapp.com';
   var SERVICE_URL =  HOST_IP + "/api/get_event";
     
 //constants
