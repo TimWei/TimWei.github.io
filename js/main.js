@@ -14,6 +14,8 @@ var SERVICE_URL =  HOST_IP + "/api/get_main";
 
 //constants
 var BOSS = [
+  'プロトバハムート',
+  'ジ・オーダー・グランデ',
   'ティアマト・マグナ',
   'コロッサス・マグナ',
   'リヴァイアサン・マグナ',
@@ -23,6 +25,8 @@ var BOSS = [
   ]
 
 var BOSS_IMG_HASH = {
+  'プロトバハムート': 'img/main/baha.png',
+  'ジ・オーダー・グランデ': 'img/main/grand.png',
   'ティアマト・マグナ': 'img/main/wind.png',
   'コロッサス・マグナ': 'img/main/fire.png',
   'リヴァイアサン・マグナ': 'img/main/water.png',
@@ -31,6 +35,8 @@ var BOSS_IMG_HASH = {
   'セレスト・マグナ': 'img/main/dark.png'
 }
 var BOSS_NAME_HASH = {
+  'プロトバハムート': 'baha',
+  'ジ・オーダー・グランデ': 'grand',
   'ティアマト・マグナ': 'wind',
   'コロッサス・マグナ': 'fire',
   'リヴァイアサン・マグナ': 'water',
