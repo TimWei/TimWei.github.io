@@ -30,7 +30,7 @@ var BOSS = [
   ]
 
 var BOSS_IMG_HASH = {
-  'ローズクイーン': 'img/hl_main/rosen.png'
+  'ローズクイーン': 'img/hl_main/rosen.png',
   'ナタク': 'img/hl_main/wind.png',
   'フラム＝グラス': 'img/hl_main/fire.png',
   'マキュラ・マリウス': 'img/hl_main/water.png',
@@ -46,7 +46,7 @@ var BOSS_IMG_HASH = {
 }
 
 var BOSS_NAME_HASH = {
-  'ローズクイーン': 'rosen'
+  'ローズクイーン': 'rosen',
   'ナタク': 'wind_hl',
   'フラム＝グラス': 'fire_hl',
   'マキュラ・マリウス': 'water_hl',
