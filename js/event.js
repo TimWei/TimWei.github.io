@@ -14,17 +14,24 @@
     
 //constants
 var BOSS = [
-  // 'ティターン'
-  'アグニス'
+  'ティターン',
+  'アグニス',
+  'ゼピュロス',
+  'ネプチューン'
   ]
 
 var BOSS_IMG_HASH = {
-  // 'ティターン': 'img/event/four_earth.png'
-  'アグニス': 'img/event/four_fire.png'
+  'ティターン': 'img/event/four_earth.png',
+  'アグニス': 'img/event/four_fire.png',
+  'ゼピュロス': 'img/event/four_wind.png',
+  'ネプチューン': 'img/event/four_water.png'
+
 }
 var BOSS_NAME_HASH = {
-  // 'ティターン': 'four_earth'
-  'アグニス': 'four_fire'
+  'ティターン': 'four_earth',
+  'アグニス': 'four_fire',
+  'ゼピュロス': 'four_wind',
+  'ネプチューン': 'four_water'
 }
 
 
