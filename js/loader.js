@@ -22,7 +22,9 @@ $('.main_container').ready(function(){
     $('.list').eq(0).empty();
     // if(refresh_count < 60){
     get_data();
-    window.setTimeout(tick, 5000); 
+    if(AUTO_LOAD){ 
+      window.setTimeout(tick, 5000); 
+    } 
     //   refresh_count++;
     // }else{
     //   say('該F5了ㄛ');
