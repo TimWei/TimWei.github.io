@@ -4,14 +4,9 @@ var SERVICE_URL =  HOST_IP + "/api/get_main";
 
 //constants
 var BOSS = [
-  'ローズクイーン',
-  'ナタク',
-  'フラム＝グラス',
-  'マキュラ・マリウス',
-  'メドゥーサ',
-  'アポロン',
-  'Dエンジェル・オリヴィエ',
-  'ティアマト・マグナ＝エア',
+  'プロトバハムート',
+  'ジ・オーダー・グランデ',
+  'ティアマト・マグナ',
   'コロッサス・マグナ',
   'リヴァイアサン・マグナ',
   'ユグドラシル・マグナ',
@@ -20,30 +15,19 @@ var BOSS = [
   ]
 
 var BOSS_IMG_HASH = {
-  'ローズクイーン': 'img/hl_main/rosen.png',
-  'ナタク': 'img/hl_main/wind.png',
-  'フラム＝グラス': 'img/hl_main/fire.png',
-  'マキュラ・マリウス': 'img/hl_main/water.png',
-  'メドゥーサ': 'img/hl_main/earth.png',
-  'アポロン': 'img/hl_main/light.png',
-  'Dエンジェル・オリヴィエ': 'img/hl_main/dark.png',
-  'ティアマト・マグナ＝エア': 'img/main/wind.png',
+  'プロトバハムート': 'img/main/baha.png',
+  'ジ・オーダー・グランデ': 'img/main/grand.png',
+  'ティアマト・マグナ': 'img/main/wind.png',
   'コロッサス・マグナ': 'img/main/fire.png',
   'リヴァイアサン・マグナ': 'img/main/water.png',
   'ユグドラシル・マグナ': 'img/main/earth.png',
   'シュヴァリエ・マグナ': 'img/main/light.png',
-  'セレスト・マグナ': 'img/main/dark.png',
+  'セレスト・マグナ': 'img/main/dark.png'
 }
-
 var BOSS_NAME_HASH = {
-  'ローズクイーン': 'rosen',
-  'ナタク': 'wind_hl',
-  'フラム＝グラス': 'fire_hl',
-  'マキュラ・マリウス': 'water_hl',
-  'メドゥーサ': 'earth_hl',
-  'アポロン': 'light_hl',
-  'Dエンジェル・オリヴィエ': 'dark_hl',
-  'ティアマト・マグナ＝エア': 'wind',
+  'プロトバハムート': 'baha',
+  'ジ・オーダー・グランデ': 'grand',
+  'ティアマト・マグナ': 'wind',
   'コロッサス・マグナ': 'fire',
   'リヴァイアサン・マグナ': 'water',
   'ユグドラシル・マグナ': 'earth',
