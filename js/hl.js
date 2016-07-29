@@ -30,7 +30,7 @@ var BOSS = [
   ]
 
 var BOSS_IMG_HASH = {
-  'ローズクイーン': 'img/hl_main/rosen.png'
+  'ローズクイーン': 'img/hl_main/rosen.png',
   'ナタク': 'img/hl_main/wind.png',
   'フラム＝グラス': 'img/hl_main/fire.png',
   'マキュラ・マリウス': 'img/hl_main/water.png',
@@ -46,7 +46,7 @@ var BOSS_IMG_HASH = {
 }
 
 var BOSS_NAME_HASH = {
-  'ローズクイーン': 'rosen'
+  'ローズクイーン': 'rosen',
   'ナタク': 'wind_hl',
   'フラム＝グラス': 'fire_hl',
   'マキュラ・マリウス': 'water_hl',
@@ -116,11 +116,7 @@ $('.main_container').ready(function(){
   
   function set_error(){
     var list = $('.list');
-    var error = '<p class="error">' + ' <span>伺服器沒有回應，請稍後片刻</span></br></br></br></br></br>'+
-    '<span class="hidden_text">作者：windows又爆炸啦</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></p>';
+    var error = '<p class="error">' + ' <span>維修時段!!</span></br></br></p>';
     list.append(error);
   } 
 

@@ -78,3 +78,7 @@
     color: red;
     font-size: 5px;
   }  
+  .highlight{
+    font-size: 30px;
+    font-weight: bold;
+  }

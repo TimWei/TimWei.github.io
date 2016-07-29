@@ -1,0 +1,26 @@
+  .main_container {
+    margin-left: 50px;
+  }
+
+  .main_header{
+    margin-top: 50px;
+    font-size:50px;
+  } 
+  
+  .list{
+    width: 40%;
+  }
+  .list_item{
+    width: 330px;
+    margin-left: 30px;
+    display: inline-block;
+  }
+  .error{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+  }  
+  .hidden_text{
+    font-size: 15px;
+    color: white;
+  }

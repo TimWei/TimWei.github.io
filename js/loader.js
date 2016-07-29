@@ -9,63 +9,30 @@
 
     }
     
-var HOST_IP = 'http://gacha-blue-fantasy.herokuapp.com';
-var SERVICE_URL =  HOST_IP + "/api/get_main";
-
-//constants
-var BOSS = [
-  'プロトバハムート',
-  'ジ・オーダー・グランデ',
-  'ティアマト・マグナ',
-  'コロッサス・マグナ',
-  'リヴァイアサン・マグナ',
-  'ユグドラシル・マグナ',
-  'シュヴァリエ・マグナ',
-  'セレスト・マグナ'
-  ]
-
-var BOSS_IMG_HASH = {
-  'プロトバハムート': 'img/main/baha.png',
-  'ジ・オーダー・グランデ': 'img/main/grand.png',
-  'ティアマト・マグナ': 'img/main/wind.png',
-  'コロッサス・マグナ': 'img/main/fire.png',
-  'リヴァイアサン・マグナ': 'img/main/water.png',
-  'ユグドラシル・マグナ': 'img/main/earth.png',
-  'シュヴァリエ・マグナ': 'img/main/light.png',
-  'セレスト・マグナ': 'img/main/dark.png'
-}
-var BOSS_NAME_HASH = {
-  'プロトバハムート': 'baha',
-  'ジ・オーダー・グランデ': 'grand',
-  'ティアマト・マグナ': 'wind',
-  'コロッサス・マグナ': 'fire',
-  'リヴァイアサン・マグナ': 'water',
-  'ユグドラシル・マグナ': 'earth',
-  'シュヴァリエ・マグナ': 'light',
-  'セレスト・マグナ': 'dark'
-}
-
 
 $('.main_container').ready(function(){
-  
+  console.log(SERVICE_URL)
   var refresh_count = 0;
-  get_data();
-  // init();
+  var empty_flag = true;
+  // get_data();
+  tick();
 
 
-  // function init(){
-  //   $('.list').eq(0).empty();
-  //   if(refresh_count < 60){
-  //     get_data();
-  //     window.setTimeout(init, 10000); 
-  //     refresh_count++;
-  //   }else{
-  //     say('該F5了ㄛ');
-  //   }
-  // }
+  function tick(){
+    $('.list').eq(0).empty();
+    // if(refresh_count < 60){
+    get_data();
+    if(AUTO_LOAD){ 
+      window.setTimeout(tick, 5000); 
+    } 
+    //   refresh_count++;
+    // }else{
+    //   say('該F5了ㄛ');
+    // }
+  }
 
   function get_data(){
-    console.log(SERVICE_URL)
+    
     $.ajax({
       type: "GET",
       url: SERVICE_URL,
@@ -90,19 +57,16 @@ $('.main_container').ready(function(){
       if(data[key].length > 0){
         append_list_item(list,key);
         append_table(list,key,data[key]);
+        empty_flag = false;
       }else{
         continue;
       }
     }
-  } 
+  }
   
   function set_error(){
     var list = $('.list');
-    var error = '<p class="error">' + ' <span>伺服器沒有回應，請稍後片刻</span></br></br></br></br></br>'+
-    '<span class="hidden_text">作者：windows又爆炸啦</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></br>'+
-    '<span class="hidden_text">作者：請給我一點黃金</span></p>';
+    var error = '<p class="error">' + ' <span>維修時段!!</span></br></br></p>';
     list.append(error);
   } 
 
@@ -147,7 +111,11 @@ $('.main_container').ready(function(){
 
   function show_bubble(){
     var bubble_div = $('.bubble');
-    bubble_div.children('p').text( random_text() );
+    if(empty_flag){
+      bubble_div.children('p').text(  );
+    }else{
+      bubble_div.children('p').text( random_text() );
+    }
     bubble_div.removeClass('hide');
 
   }
@@ -175,6 +143,6 @@ $('.main_container').ready(function(){
     return text;
   }  
   function say(e){
-    $('.bubble').children('p').text( random_text() );
+    $('.bubble').children('p').text(e);
   }
 });
