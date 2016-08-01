@@ -112,7 +112,7 @@ $('.main_container').ready(function(){
   function show_bubble(){
     var bubble_div = $('.bubble');
     if(empty_flag){
-      bubble_div.children('p').text(  );
+      bubble_div.children('p').text(EMPTY_STRING);
     }else{
       bubble_div.children('p').text( random_text() );
     }
