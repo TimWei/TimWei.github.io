@@ -34,6 +34,10 @@
 
 <h3>更新履歷</h3>
 
+8/01:</br>
+-fix empty string </br>
+</br>
+
 7/29:</br>
 -typo</br>
 -整理一些舊檔案</br>
