@@ -51,4 +51,4 @@ var BOSS_NAME_HASH = {
   'セレスト・マグナ': 'dark'
 }
 
-var EMPTY_STRING = '目前沒HL唷!';
+var EMPTY_STRING = '沒HL唷!';

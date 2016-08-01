@@ -35,4 +35,4 @@ var BOSS_NAME_HASH = {
   '青竜':'four_wind_ex'
 }
 
-var EMPTY_STRING = '目前沒活動唷!';
+var EMPTY_STRING = '沒活動唷!';

@@ -29,4 +29,4 @@ var BOSS_NAME_HASH = {
   'Dエンジェル・オリヴィエ': 'dark'
 }
 
-var EMPTY_STRING = '目前沒終突召喚!';
+var EMPTY_STRING = '沒終突召喚!';

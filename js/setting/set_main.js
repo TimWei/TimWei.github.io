@@ -34,4 +34,4 @@ var BOSS_NAME_HASH = {
   'シュヴァリエ・マグナ': 'light',
   'セレスト・マグナ': 'dark'
 }
-var EMPTY_STRING = '目前沒主線唷!';
+var EMPTY_STRING = '沒主線唷!';
