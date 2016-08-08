@@ -34,6 +34,10 @@
 
 <h3>更新履歷</h3>
 
+8/08:</br>
+-four event up </br>
+</br>
+
 8/01:</br>
 -fix empty string </br>
 </br>
