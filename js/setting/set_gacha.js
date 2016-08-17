@@ -1,5 +1,5 @@
 var AUTO_LOAD = false;
-var HOST_IP = 'http://gacha-blue-fantasy.herokuapp.com';
+var HOST_IP = '//gacha-blue-fantasy.herokuapp.com';
 var SERVICE_URL =  HOST_IP + "/api/get_gacha";
 
 //constants
