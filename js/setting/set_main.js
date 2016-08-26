@@ -1,5 +1,5 @@
 var AUTO_LOAD = false;
-var HOST_IP = 'localhost:3000';
+var HOST_IP = '//gacha-blue-fantasy.herokuapp.com';
 var SERVICE_URL =  HOST_IP + "/api/get_main";
 var BOSS_INFO = {
               'プロトバハムート':{
