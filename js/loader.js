@@ -11,37 +11,25 @@
     
 
 $('.main_container').ready(function(){
-  console.log(SERVICE_URL)
+  console.log(SERVICE_URL);
   var refresh_count = 0;
   var empty_flag = true;
-  // get_data();
   tick();
-
-
   function tick(){
     $('.list').eq(0).empty();
-    // if(refresh_count < 60){
     get_data();
     if(AUTO_LOAD){ 
       window.setTimeout(tick, 5000); 
     } 
-    //   refresh_count++;
-    // }else{
-    //   say('該F5了ㄛ');
-    // }
   }
 
-  function get_data(){
-    
+  function get_data(){    
     $.ajax({
       type: "GET",
       url: SERVICE_URL,
       timeout: 5000,
       success: function(json) {
         set_list(json);
-        //show_bubble();
-
-        //now show_bubble in resize event
         window.setTimeout(resize_document, 800); 
       },
       error: function(){
@@ -72,8 +60,8 @@ $('.main_container').ready(function(){
 
   function append_list_item(parent,key){
     var list_item = '<div class="list_item">'+
-                      '<div style="padding-top:50px;" id="'+BOSS_NAME_HASH[key]+'">'+
-                        '<img style="width:100px;" src="'+ BOSS_IMG_HASH[key] + '">'+
+                      '<div style="padding-top:50px;" id="'+BOSS_INFO[key]['id']+'">'+
+                        '<img style="width:100px;" src="'+ BOSS_INFO[key]['img'] + '">'+
                         '<span style="font-size: 25px;">' + key + '</span>'
                       '</div>'+
                     '</div>';
@@ -81,12 +69,9 @@ $('.main_container').ready(function(){
   }
 
   function append_table(parent,key,id_array){
-    var img_div_id = '#' + BOSS_NAME_HASH[key];
-    var boss_index = BOSS.indexOf(key);
- //   var table_id = 'table_'+boss_index;
- //   var table_data = '<table><tbody id="'+table_id+'">';
-   var table_data = '<table><tbody>';
-
+    var img_div_id = '#' + BOSS_INFO[key]['id'];
+    var boss_index = BOSS_INFO[key]['boss_index'];
+    var table_data = '<table><tbody>';
     for(var i = 0 ; i< id_array.length;i++){
       var row_data = '<tr>'+
                         '<td id="' +boss_index+'_'+i+'" style="padding-top: 15px;">'+

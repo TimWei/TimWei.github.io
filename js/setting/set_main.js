@@ -1,37 +1,48 @@
 var AUTO_LOAD = false;
-var HOST_IP = '//gacha-blue-fantasy.herokuapp.com';
+var HOST_IP = 'localhost:3000';
 var SERVICE_URL =  HOST_IP + "/api/get_main";
+var BOSS_INFO = {
+              'プロトバハムート':{
+                          'img':'img/main/baha.png',
+                          'id':'baha',
+                          'boss_index':'0'
+                        },
+              'ジ・オーダー・グランデ':{
+                          'img':'img/main/grand.png',
+                          'id':'grand',
+                          'boss_index':'1'
+                        },
+              'ティアマト・マグナ':{
+                          'img':'img/main/wind.png',
+                          'id':'wind',
+                          'boss_index':'2'
+                        },
+              'コロッサス・マグナ':{
+                          'img':'img/main/fire.png',
+                          'id':'fire',
+                          'boss_index':'3'
+                        },
+              'リヴァイアサン・マグナ':{
+                          'img':'img/main/water.png',
+                          'id':'water',
+                          'boss_index':'4'
+                        },
+              'ユグドラシル・マグナ':{
+                          'img':'img/main/earth.png',
+                          'id':'earth',
+                          'boss_index':'5'
+                        },
+              'シュヴァリエ・マグナ':{
+                          'img':'img/main/light.png',
+                          'id':'light',
+                          'boss_index':'6'
+                        },
+              'セレスト・マグナ':{
+                          'img':'img/main/dark.png',
+                          'id':'dark',
+                          'boss_index':'7'
+                        },
 
-//constants
-var BOSS = [
-  'プロトバハムート',
-  'ジ・オーダー・グランデ',
-  'ティアマト・マグナ',
-  'コロッサス・マグナ',
-  'リヴァイアサン・マグナ',
-  'ユグドラシル・マグナ',
-  'シュヴァリエ・マグナ',
-  'セレスト・マグナ'
-  ]
+            };
 
-var BOSS_IMG_HASH = {
-  'プロトバハムート': 'img/main/baha.png',
-  'ジ・オーダー・グランデ': 'img/main/grand.png',
-  'ティアマト・マグナ': 'img/main/wind.png',
-  'コロッサス・マグナ': 'img/main/fire.png',
-  'リヴァイアサン・マグナ': 'img/main/water.png',
-  'ユグドラシル・マグナ': 'img/main/earth.png',
-  'シュヴァリエ・マグナ': 'img/main/light.png',
-  'セレスト・マグナ': 'img/main/dark.png'
-}
-var BOSS_NAME_HASH = {
-  'プロトバハムート': 'baha',
-  'ジ・オーダー・グランデ': 'grand',
-  'ティアマト・マグナ': 'wind',
-  'コロッサス・マグナ': 'fire',
-  'リヴァイアサン・マグナ': 'water',
-  'ユグドラシル・マグナ': 'earth',
-  'シュヴァリエ・マグナ': 'light',
-  'セレスト・マグナ': 'dark'
-}
 var EMPTY_STRING = '沒主線唷!';
