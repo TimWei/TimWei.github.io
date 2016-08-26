@@ -72,7 +72,7 @@ var BOSS_INFO = {
                           'id':'fire_3',
                           'boss_index':'13'
                         },
-              'セレスト・マグナ':{
+              'ギルガメッシュ':{
                           'img':'img/main/earth_3.png',
                           'id':'earth_3',
                           'boss_index':'14'
