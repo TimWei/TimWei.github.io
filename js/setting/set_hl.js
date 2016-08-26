@@ -67,6 +67,16 @@ var BOSS_INFO = {
                           'id':'dark',
                           'boss_index':'12'
                         },
+              'プロメテウス':{
+                          'img':'img/main/fire_3.png',
+                          'id':'fire_3',
+                          'boss_index':'13'
+                        },
+              'セレスト・マグナ':{
+                          'img':'img/main/earth_3.png',
+                          'id':'earth_3',
+                          'boss_index':'14'
+                        },
 
             };
 
