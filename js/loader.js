@@ -54,7 +54,7 @@ $('.main_container').ready(function(){
   
   function set_error(){
     var list = $('.list');
-    var error = '<p class="error">' + ' <span>維修時段!!</span></br></br></p>';
+    var error = '<p class="error">' + ' <span>連線逾時，請稍後重試!!</span></br></br></p>';
     list.append(error);
   } 
 
