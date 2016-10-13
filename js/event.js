@@ -1,5 +1,5 @@
 $('body').ready(function(){
-	event = true;
+	event = false;
 
 	if(event){
 		$('.event_off').hide();
