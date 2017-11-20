@@ -75,7 +75,7 @@ $('.main_container').ready(function(){
     for(var i = 0 ; i< id_array.length;i++){
       var row_data = '<tr>'+
                         '<td id="' +boss_index+'_'+i+'" style="padding-top: 15px;">'+
-                           '<textarea class="js-copytextarea-'+ boss_index+'-'+ boss_index+'_'+i+'" onclick="copyToClipboard('+boss_index+','+'\''+boss_index+'_'+i+'\''+')">'+ id_array[i].split("：")[1]+'</textarea>'+
+                           '<textarea class="js-copytextarea-'+ boss_index+'-'+ boss_index+'_'+i+'" onclick="copyToClipboard('+boss_index+','+'\''+boss_index+'_'+i+'\''+')">'+ id_array[i]+'</textarea>'+
                             '<a href="javascript: void;" style="display:inline; color:red; font-weight: bold;"  onclick="document.getElementById(\''+boss_index+'_'+i+ '\').style.display=\'none\';return false;">刪除</a>'+
                         '</td>'+
                       '</tr>';
